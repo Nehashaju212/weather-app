@@ -163,8 +163,9 @@ canvas {
 }
 
 button:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(255, 255, 255, 0.3);
   outline-offset: 2px;
+  border: none;
 }
 
 input:focus-visible {
@@ -546,4 +547,25 @@ input:focus-visible {
 
 .via-yellow-300\/40 {
   --tw-gradient-to: rgb(253 224 71 / 0.4);
+}
+
+.glass-forecast-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.glass-forecast-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.glass-forecast-button.selected {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
 }

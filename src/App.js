@@ -696,8 +696,8 @@ function App() {
                       <button
                         key={index}
                         onClick={() => handleDaySelect(index)}
-                        className={`w-full flex items-center justify-between p-4 rounded-xl transition-all duration-300 ${
-                          selectedDay === index ? "bg-white-20 scale-102" : "bg-white-10 hover-bg-white-15"
+                        className={`w-full flex items-center justify-between p-4 rounded-xl glass-forecast-button ${
+                          selectedDay === index ? "selected" : ""
                         }`}
                       >
                         <div className="flex items-center gap-4">
